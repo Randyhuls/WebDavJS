@@ -9,6 +9,7 @@ webDAV.http = function(request, callback) {
             console.log('Data: ', this.responseText);
         }
     };
+
     if (!request.dir) request.dir = null;
     if (!request.fileName) request.fileName = null;
 
@@ -20,7 +21,7 @@ webDAV.http = function(request, callback) {
         http.setRequestHeader(header, request.headers[header]);
     }
 
-    http.send(request.data); // Binary file
+    http.send(request.data); // Buffer file
 
     console.log('Sent request', request);
 }

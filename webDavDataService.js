@@ -14,8 +14,8 @@ var fileToBinary = function(data, callback) {
 // Upload file to directory
 webDAV.uploadToDirectory = function(directory, fileName, data) {
 
-    var updateRequest = function(binaryData) {
-        request.data = binaryData;
+    var updateRequest = function(bufferData) {
+        request.data = bufferData;
         webDAV.http(request);
     };
 
