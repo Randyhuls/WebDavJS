@@ -8,7 +8,7 @@ var getFile = function() {
 var uploadSomeFile = function() {
     var file = getFile();
 
-    if (!file) throw 'UPLOAD ERROR: File unavailable or file is non-binary';
+    if (!file) throw 'UPLOAD ERROR: File unavailable or object is not a file object';
 
     webDAV.uploadToDirectory(
         '/Files/', // Directory (Beginning and ending with / )
