@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta charset="utf-8">
+    <title>WebDavJS example</title>
+
+    <!-- WebDavJS  @ BLAUD 2017 - www.blaud.com -->
+    <script src="config.js"></script>
+    <script src="webDavComService.js"></script>
+
+    <!-- Request methods -->
+    <script src="webDavDataService.js"></script>
+</head>
+<body>
+<main>
+    <h1>Upload file: </h1>
+    <img id="preview" src=""/>
+
+
+    <input type="file" id="file">
+    <button onclick="uploadSomeFile()">Upload</button>
+
+    <h1>Directory: </h1>
+    <button onclick="getSomeDirectory()">Get directory</button>
+</main>
+
+<!-- Example app -->
+<script src="_app.js"></script>
+
+</body>
+</html>
