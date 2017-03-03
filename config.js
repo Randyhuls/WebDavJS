@@ -2,7 +2,7 @@ var webDAV = webDAV || {};
 
 // Configure this file to match your WebDAV-server settings
 webDAV.config = {
-    url: 'https://webdav.4shared.com', // Base URL to webDAV-server
+    url: 'http://www.my-cloud-server.com/webdav', // Base URL to webDAV-server (exclude ending backslash)
     auth: true, // Authentication required (boolean),
     security: 'Basic', // Type of authentication security; default is 'Basic'
     user: 'MyUserName', // Username

@@ -1,6 +1,6 @@
 var webDAV = webDAV || {};
 
-// Convert binary to base64
+// Convert file object to buffer file and optionally as base64 string
 var fileToBinary = function(data, callback) {
     var reader = new FileReader();
 
